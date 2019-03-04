@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
-
-echo "-----> Nothing to do."
+set -x
+echo "-----> Deleting cache $2 advised by cristian"
+rm -rfv $2/*
+echo "-----> Cache deleted"
